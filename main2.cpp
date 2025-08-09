@@ -64,3 +64,13 @@ public:
     double getMohit();
     void print();
 };
+circle::circle() {}
+circle::circle(point c, point p1)
+{
+    center = c;
+    p = p1;
+}
+void circle ::setPointcenter(point c)
+{
+    center = c;
+}
