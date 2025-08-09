@@ -46,3 +46,21 @@ void point::print()
 {
     cout << "point" << x << "," << y << endl;
 }
+
+class circle
+{
+private:
+    point center;
+    point p; // نقطه روی شعاع دایره
+public:
+    circle();
+    circle(point center, point p);
+    void setPointcenter(point c);
+    void setP(point p1);
+    point getPointCenter();
+    point getp();
+    double getRadious();
+    double getArea();
+    double getMohit();
+    void print();
+};
