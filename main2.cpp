@@ -118,3 +118,11 @@ double circle::getMohit()
     double r = getRadious();
     return 2 * 3, 14 * r;
 }
+int main()
+{
+    point p1(4.2, 1.5);
+    point p2;
+    p2.set_x(3.4);
+    p2.set_y(1.6);
+    p1.print();
+}
