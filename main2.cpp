@@ -74,3 +74,47 @@ void circle ::setPointcenter(point c)
 {
     center = c;
 }
+void circle ::setPointcenter(point c)
+{
+    center = c;
+}
+void circle ::setP(point p1)
+{
+    p = p1;
+}
+point circle::getPointCenter()
+{
+    return center;
+}
+
+point circle::getp()
+{
+
+    return p;
+}
+
+void circle::print()
+{
+    cout << "Circle Center: ";
+    center.print();
+    cout << ", Point on Radius: ";
+    p.print();
+    cout << endl;
+}
+double circle::getRadious()
+{
+    double dx = p.get_x() - center.get_x();
+    double dy = p.get_y() - center.get_y();
+    return sqrt(dx * dx + dy * dy);
+}
+double circle::getArea()
+{
+    double r = getRadious();
+    const float(3.14);
+    return 3.14 * r * r;
+}
+double circle::getMohit()
+{
+    double r = getRadious();
+    return 2 * 3, 14 * r;
+}
